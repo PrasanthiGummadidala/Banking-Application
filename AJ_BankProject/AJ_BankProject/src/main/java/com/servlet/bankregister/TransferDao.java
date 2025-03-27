@@ -46,7 +46,7 @@ public class TransferDao {
 			if (rs.next()) {
 				if (getCurrentBalance(bb.getAccountNo()) >= bb.getAmount()) {
 
-					PreparedStatement ps1 = con.prepareStatement("select * from sastabank where  acno=?");
+					PreparedStatement ps1 = con.prepareStatement("select * from icicibank where  acno=?");
 					ps1.setInt(1, bb.getTargetAcno());
 
 					ResultSet rs1 = ps1.executeQuery();
@@ -54,9 +54,9 @@ public class TransferDao {
 					if (rs1.next()) {
 
 						PreparedStatement pstmt1 = con
-								.prepareStatement("update sastabank set amount=amount-? where Acno=?");
+								.prepareStatement("update icicibank set amount=amount-? where Acno=?");
 						PreparedStatement pstmt2 = con
-								.prepareStatement("update sastabank set amount=amount+? where Acno=?");
+								.prepareStatement("update icicibank set amount=amount+? where Acno=?");
 
 						pstmt1.setInt(1, bb.getAmount());
 						pstmt1.setInt(2, bb.getAccountNo());
