@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI - BANK</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://media.licdn.com/dms/image/C4D12AQFs1vtNw0opUg/article-cover_image-shrink_720_1280/0/1520160366334?e=2147483647&v=beta&t=tsk7fbkBoI8SNfrW_aYZPnG3SgE3jmOmZ0hPhKO6PD4" alt="Logo">
+            </div>
+            <div class="title">
+                <h1>ICICI - BANK</h1>
+                <p>ExtraOrdinary Service</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="newaccount.html">NEW ACCOUNT</a></li>
+                <li><a href="balance.html">BALANCE</a></li>
+                <li><a href="deposit.jsp">DEPOSIT</a></li>
+                <li><a href="withdraw.jsp">WITHDRAW</a></li>
+                <li><a href="transfer.html">TRANSFER</a></li>
+                <li><a href="closeaccount.html">CLOSE A/C</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="services">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="https://www.javatpoint.com">www.javatpoint.com</a></li>
+                    <li><a href="https://www.javacstpoint.com">www.javacstpoint.com</a></li>
+                    <li><a href="https://www.javatpoint.com/forum.jsp">www.javatpoint.com/forum.jsp</a></li>
+                </ul>
+            </section>
+            <section class="form-section">
+                <h2>Balance Details</h2>
+                <div>Welcome, ${userName}</div>
+                <table border="1">
+                    <tr>
+                        <th>ACCOUNT NO</th>
+                        <th>USERNAME</th>
+                        <th>AMOUNT</th>
+                        <th>ADDRESS</th>
+                        <th>PHONE</th>
+                    </tr>
+                    <c:forEach var="detail" items="${viewDetails}">
+                        <tr>
+                            <td>${detail.accountNo}</td>
+                            <td>${detail.userName}</td>
+                            <td>${detail.amount}</td>
+                            <td>${detail.address}</td>
+                            <td>${detail.phone}</td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
