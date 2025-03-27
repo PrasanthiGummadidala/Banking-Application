@@ -31,7 +31,7 @@ public class TransferDao {
 		Savepoint s = con.setSavepoint();
 		try {
 			PreparedStatement ps = con
-					.prepareStatement("select * from sastabank where USERNAME=? and PASSWORD=? and ACNO=?");
+					.prepareStatement("select * from icicibank where USERNAME=? and PASSWORD=? and ACNO=?");
 			String uname=bb.getUserName();
 			String password = bb.getPassword();
 			int accountNo = bb.getAccountNo();
