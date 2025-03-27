@@ -38,7 +38,7 @@ public class CheckBalance extends HttpServlet {
             pw.println("<div class='container'>");
             pw.println("<header>");
             pw.println("<div class='logo'><img src='https://media.licdn.com/dms/image/C4D12AQFs1vtNw0opUg/article-cover_image-shrink_720_1280/0/1520160366334?e=2147483647&v=beta&t=tsk7fbkBoI8SNfrW_aYZPnG3SgE3jmOmZ0hPhKO6PD4' alt='Logo'></div>");
-            pw.println("<div class='title'><h1>SASTA - BANK</h1><p>ExtraOrdinary Service</p></div>");
+            pw.println("<div class='title'><h1>ICICI - BANK</h1><p>ExtraOrdinary Service</p></div>");
             pw.println("</header>");
             pw.println("<nav><ul>");
             pw.println("<li><a href='newaccount.html'>NEW ACCOUNT</a></li>");
