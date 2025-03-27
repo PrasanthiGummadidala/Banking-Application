@@ -31,7 +31,7 @@ public class CheckBalance extends HttpServlet {
             {
             pw.println("<html>");
             pw.println("<head>");
-            pw.println("<title>SASTA - BANK</title>");
+            pw.println("<title>ICICI - BANK</title>");
             pw.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"styles2.css\">");
             pw.println("</head>");
             pw.println("<body>");
