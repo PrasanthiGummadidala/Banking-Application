@@ -11,7 +11,7 @@ public class WithdrawDao
 		try {
 			Connection con = Connection_Class.getConnection();
 			PreparedStatement st = con.prepareStatement("update icicibank set AMOUNT=AMOUNT-? where ACNO=? and  USERNAME=? and PASSWORD=? ");
-			PreparedStatement st1 = con.prepareStatement("select AMOUNT  from sastabank where ACNO=?");
+			PreparedStatement st1 = con.prepareStatement("select AMOUNT  from icicibank where ACNO=?");
 			st1.setInt(1, b.getAccountNo());
 			ResultSet set = st1.executeQuery();
 			while(set.next())
