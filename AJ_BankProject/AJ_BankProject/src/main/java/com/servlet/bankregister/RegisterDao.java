@@ -43,7 +43,7 @@ public class RegisterDao
 		try {
 
 			Connection con=Connection_Class.getConnection();
-			PreparedStatement st = con.prepareStatement("select * from sastabank where USERNAME=? and PASSWORD=?");
+			PreparedStatement st = con.prepareStatement("select * from icicibank where USERNAME=? and PASSWORD=?");
 			st.setString(1, rb.getUserName());
 			st.setString(2, rb.getPassword());
 			ResultSet rs = st.executeQuery();
